@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+.testimonials-container {
+  background-color: #476ce4;
+  color: #fff;
+  border-radius: 15px;
+  padding: 50px 80px;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+}
+
+.fa-quote-left {
+  top: 10px;
+  left: 20px;
+}
+
+.fa-quote-right {
+  bottom: 10px;
+  right: 20px;
+}
+
+.testimonial {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.user .user-details {
+  margin-left: 15px;
+  text-align: left;
+}
+
+.user .username {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user .role {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 4px;
+  width: 100%;
+  animation: grow 5s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 20px 30px;
+  }
+}
